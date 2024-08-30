@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inspect CI 1</title>
-    <link rel="stylesheet" href="/app/static/css/Styles.css">
-</head>
-<body>
+{% extends "base.html" %}
 
-    <h1>Inspect CI</h1>
-    
-</body>
-</html>
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to My App!</h1>
+    <p class="lead">This is a simple, elegant web application built with Flask and Bootstrap.</p>
+    <hr class="my-4">
+    <p>Explore the features of this application and see what it can do.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+{% endblock %}

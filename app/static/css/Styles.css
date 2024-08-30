@@ -1,0 +1,25 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b7d6f5;
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Custom container styles */
+.container {
+    max-width: 900px;
+}
