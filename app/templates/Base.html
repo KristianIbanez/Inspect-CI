@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Styles.css')}}">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Inspect CI{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <img
+          src="{{ url_for('static', filename='img/LOGO JPG-01(1).jpg') }}"
+          alt="Logo"
+          width="400"
+          height="250"
+        />
+        <div class="navbar-brand">Inspect CI</div>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="/">Inicio</a></li>
+          <li class="nav-item"><a href="#">Estadísticas</a></li>
+          <li class="nav-item"><a href="#">Formatos</a></li>
+          <li class="nav-item"><a href="#">Novedades</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h1>Base</h1>
-    
-</body>
+    <!-- Main Content -->
+    <div class="container">
+      {% block content %}
+      <!-- Page-specific content will go here -->
+      {% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Inspect CI. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
