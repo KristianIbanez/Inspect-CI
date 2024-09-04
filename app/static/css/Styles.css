@@ -3,25 +3,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e2f7ff;
+    background-color: #e2f5ff;
     color: #333;
 }
-
 
 /* Navbar styles */
 .navbar {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 5px 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .navbar-brand {
-    font-size: 24px;
+    font-size: 20px; 
     font-weight: bold;
-    margin-right: 20px;
+    margin-left: 25px; 
 }
 
 .navbar-nav {
@@ -34,14 +33,15 @@ body {
 }
 
 .navbar-nav .nav-item {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .navbar-nav .nav-item a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 8px;
     border-radius: 3px;
+    font-size: 14px;
 }
 
 .navbar-nav .nav-item a:hover {
@@ -51,6 +51,11 @@ body {
 .navbar > * {
     display: flex;
     align-items: center;
+}
+
+.navbar img {
+    width: 100px; 
+    height: auto; 
 }
 
 /* Container styles */
@@ -69,14 +74,14 @@ body {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
 }
 
-
 /* Welcome section styles */
 .welcome-section {
+    position: sticky;
     text-align: center;
     margin: 50px 0;
 }
