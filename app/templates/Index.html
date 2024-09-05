@@ -3,9 +3,44 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-<div class="welcome-section">
-    <h1>Bienvenido a Inspect CI</h1>
-    <p>Una APP diseñada a su medida, ideal para sus inpecciones del Sistema de Seguridad y Salud en el Trabajo.</p>
-    <a href="#" class="btn">Ingreso</a>
-</div>
+
+    <div class="welcome-section">
+        <h1>Bienvenido a Inspect CI</h1>
+        <p>Una APP diseñada a su medida, ideal para sus inpecciones del Sistema de Seguridad y Salud en el Trabajo.</p>
+    </div>
+
+    <div class="welcome-section">
+        <section class="usuario">
+            <div>
+                <h2>Inspector Sg-sst</h2>
+                <img src="{{ url_for('static', filename='img/avatar1.png') }}" 
+                  alt="login1"
+                  height="300"
+                  width="250"
+                  />
+                <p>Ingrese aqui para acceder a formatos y formularios de inspección.</p>
+                <a href="#" class="btn">Ingreso</a>
+            </div>
+            <div>
+                <h2>Administrador Sg-sst</Sg-ss></h2>
+                <img src="{{ url_for('static', filename='img/avatar2.png') }}" 
+                  alt="login2"
+                  height="300"
+                  width="250"
+                  />
+                <p>Ingrese aqui para revisar estadisticas y realizar control.</p>
+                <a href="#" class="btn">Ingreso</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="welcome-section">
+        <section class="Registro">
+            <p>Si no cuenta con un usuario dar click en: </p>
+           <a href="INSPECT CI\app\templates\Form_reg.html" class="btn">Registrarse</a>
+         </section>
+    </div>
+
 {% endblock %}
+
+
