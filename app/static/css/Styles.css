@@ -37,7 +37,7 @@ body {
 }
 
 .navbar-nav .nav-item a {
-    color: white;
+    color: #333;
     text-decoration: none;
     padding: 5px 8px;
     border-radius: 3px;
@@ -108,3 +108,9 @@ body {
 .welcome-section .btn:hover {
     background-color: #555;
 }
+
+.usuario {
+    display: flex;
+    background-color: rgb(226, 235, 234);
+}
+  
